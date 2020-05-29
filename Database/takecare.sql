@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2020 at 07:46 PM
+-- Generation Time: May 29, 2020 at 07:50 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -112,14 +112,6 @@ CREATE TABLE `users` (
   `user_password` varchar(128) NOT NULL,
   `user_type` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `user_id`, `user_email`, `user_password`, `user_type`) VALUES
-(16, 16, 'imtiazali4090@gmail.com', '$2y$10$rPjd3YkOM5XdR657H51n8ukxsbW5JgKgzPh8COXJT1PknfRYysE5W', 'user'),
-(17, 17, 'imtiaz@gmail.com', '$2y$10$1Pxa82TiFcdDRNy2uGCay.QPRyTwd3bDC92ko9guURzSmNWIRwTDe', 'doctor');
 
 -- --------------------------------------------------------
 
@@ -246,7 +238,7 @@ ALTER TABLE `medicine_inventory`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(128) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(128) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_detail`
